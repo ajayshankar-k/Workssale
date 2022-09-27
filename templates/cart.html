@@ -1,0 +1,265 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/ecommerce/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:24:19 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>WorksSale</title>
+    <!-- Favicon-->
+    <link rel="icon" href="{% static 'dashboard/images/favi.png' %}" type="image/x-icon">
+    <!-- Plugins Core Css -->
+    <link href="{% static 'dashboard/css/app.min.css' %}" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="{% static 'dashboard/css/style.css' %}" rel="stylesheet" />
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="{% static 'dashboard/css/styles/all-themes.css' %}" rel="stylesheet" />
+</head>
+
+<body class="light">
+    <nav class="navbar">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <span class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span></span>
+          <a class="navbar-brand" href="/"><img src="{% static 'dashboard/images/logo.png' %}" width="140" height="70" style="margin-top: -20px;" alt="WorksSale" /></a> </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/sign">Login/Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <!-- /.navbar-collapse --> 
+        <div class="container-fluid" style="margin-top:5%;">
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="card-body ">
+                            <div class="wrapper wrapper-content animated fadeInRight">
+                                
+                                 <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="ibox">
+                                            <div class="ibox-title">
+                                                <span class="pull-right">(<strong>3</strong>) items</span>
+                                                <h5>Items in your cart</h5>
+                                            </div>
+                                            <div class="ibox-content">
+                                                <div class="table-responsive">
+                                                    <table class="table shoping-cart-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="cart-product-imitation">
+                                                                        <img src="{% static 'landing/images/products/10.jpg' %}"
+                                                                            alt="">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="desc">
+                                                                    <h3>
+                                                                        <a href="#" class="text-navy">
+                                                                            Asus ROG Phone 5
+                                                                        </a>
+                                                                    </h3>
+                                                                    <p class="small">
+                                                                        <strong>Color:</strong> Phantom Black
+                                                                    </p>
+                                                                    <p class="small">
+                                                                        <strong>Seller : </strong>Infotech
+                                                                    </p>
+                                                                    <div class="small m-b-none">
+                                                                        <p>Delivery by Wed, Nov 14 | Free</p>
+                                                                    </div>
+                                                                    <div class="m-t-sm">
+                                                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i>
+                                                                            Add gift package</a>
+                                                                        |
+                                                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i>
+                                                                            Remove item</a>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    ₹39,999
+                                                                    <span class="small text-muted text-price">₹55,999</span>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" class="form-control" placeholder="1">
+                                                                </td>
+                                                                <td>
+                                                                    <h4>
+                                                                        ₹39,999
+                                                                    </h4>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="ibox-content">
+                                                <div class="table-responsive">
+                                                    <table class="table shoping-cart-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="cart-product-imitation">
+                                                                        <img src="{% static 'landing/images/products/3.jpg' %}"
+                                                                            alt="">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="desc">
+                                                                    <h3>
+                                                                        <a href="#" class="text-navy">
+                                                                            Black-Shark-3 
+                                                                        </a>
+                                                                    </h3>
+                                                                    <p class="small">
+                                                                        <strong>Color:</strong> Black Glare
+                                                                    </p>
+                                                                    <p class="small">
+                                                                        <strong>Seller : </strong> Smart world
+                                                                    </p>
+                                                                    <div class="small m-b-none">
+                                                                        <p>Delivery by Wed, Nov 14 | Free</p>
+                                                                    </div>
+                                                                    <div class="m-t-sm">
+                                                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i>
+                                                                            Add gift package</a>
+                                                                        |
+                                                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i>
+                                                                            Remove item</a>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    ₹33,021
+                                                                    <span class="small text-muted text-price">₹36,690</span>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" class="form-control" placeholder="1">
+                                                                </td>
+                                                                <td>
+                                                                    <h4>
+                                                                        ₹33,021
+                                                                    </h4>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="ibox-content">
+                                                <div class="table-responsive">
+                                                    <table class="table shoping-cart-table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="cart-product-imitation">
+                                                                        <img src="{% static 'landing/images/products/16.jpg' %}"
+                                                                            alt="">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="desc">
+                                                                    <h3>
+                                                                        <a href="#" class="text-navy">
+                                                                            Oppo A31
+                                                                        </a>
+                                                                    </h3>
+                                                                    <p class="small">
+                                                                        <strong>Color:</strong> Fantasy white
+                                                                    </p>
+                                                                    <p class="small">
+                                                                        <strong>Seller : </strong>John Mobiles
+                                                                    </p>
+                                                                    <div class="small m-b-none">
+                                                                        <p>Delivery by Wed, Nov 14 | Free</p>
+                                                                    </div>
+                                                                    <div class="m-t-sm">
+                                                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i>
+                                                                            Add gift package</a>
+                                                                        |
+                                                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i>
+                                                                            Remove item</a>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    ₹12,990
+                                                                    <span class="small text-muted text-price">₹15,990</span>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" class="form-control" placeholder="1">
+                                                                </td>
+                                                                <td>
+                                                                    <h4>
+                                                                        ₹12,990
+                                                                    </h4>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="ibox-content">
+                                                <button type="button" class="btn btn-info btn-border-radius waves-effect pull-right"><i
+                                                        class="fa fa fa-shopping-cart"></i> Checkout</button>
+                                                <button type="button" onclick="window.location.href='/products'" class="btn btn-danger btn-border-radius waves-effect"><i
+                                                        class="fa fa-arrow-left"></i> Continue Shopping</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="ibox">
+                                            <div class="ibox-title">
+                                                <h5>Cart Summary</h5>
+                                            </div>
+                                            <div class="ibox-content">
+                                                <span>
+                                                    Total
+                                                </span>
+                                                <h2 class="font-bold">
+                                                    ₹86,010
+                                                </h2>
+                                                <hr>
+                                                <div class="m-t-sm">
+                                                    <div class="pull-left m-r-10">
+                                                        <button type="button" class="btn btn-info btn-border-radius waves-effect pull-right"><i
+                                                                class="fa fa fa-shopping-cart"></i> Checkout</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ibox">
+                                            <div class="ibox-title">
+                                                <h5>Support</h5>
+                                            </div>
+                                            <div class="ibox-content text-center">
+                                                <h3><i class="fa fa-phone"></i> +00 123 456 789</h3>
+                                                <span class="small">
+                                                    Please contact with us if you have any questions. We are available
+                                                    24h.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="{% static 'dashboard/js/app.min.js' %}"></script>
+    <!-- Custom Js -->
+    <script src="{% static 'dashboard/js/admin.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/ecommerce/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:24:19 GMT -->
+</html>

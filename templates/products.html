@@ -1,0 +1,463 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/ecommerce/products.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:23:06 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>WorksSale</title>
+    <!-- Favicon-->
+    <link rel="icon" href="{% static 'dashboard/images/favi.png' %}" type="image/x-icon">
+    <!-- Plugins Core Css -->
+    <link href="{% static 'dashboard/css/app.min.css' %}" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="{% static 'dashboard/css/style.css' %}" rel="stylesheet" />
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="{% static 'dashboard/css/styles/all-themes.css' %}" rel="stylesheet" />
+</head>
+
+<body class="light">
+            <nav class="navbar">
+                <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <span class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span></span>
+                  <a class="navbar-brand" href="/"><img src="{% static 'dashboard/images/logo.png' %}" width="140" height="70" style="margin-top: -20px;" alt="WorksSale" /></a> </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/cart">Cart</a></li>
+                        <li><a href="/sign">Login/Register</a></li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+            </nav>
+            <!-- /.navbar-collapse --> 
+        <div class="container-fluid" style="margin-top:3%;">
+            <!-- Single Slide with autoplay -->
+            <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="body">
+                        <div class="owl-carousel owl-theme" id="single_slide_autoplay">
+                            <div class="item">
+                                <img src="{% static 'landing/images/products/off9.jpg' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'landing/images/products/off8.jpg' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'landing/images/products/off10.jpg' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'landing/images/products/off13.jpg' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'landing/images/products/off7.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- #END# Single Slide with autoplay -->
+            <div class="row clearfix">
+                <!-- Line Chart -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/8.jpg' %}" alt="">
+                                                <img class="pic-2" src="{% static 'landing/images/products/9.jpg' %}" alt="">
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">20%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">IPhone 13 Pro Max</a></h3>
+                                            <div class="price">₹1,03,920
+                                                <span>₹1,29,900</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/12.jpg' %}" alt="">
+                                                <img class="pic-2" src="{% static 'landing/images/products/11.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">28%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star disable"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">
+                                                Samsung Galaxy Z Flip3 5G</a></h3>
+                                            <div class="price">₹60,885
+                                                <span>₹84,562</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/13.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/14.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">50%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Motorola Edge 20</a></h3>
+                                            <div class="price">₹14,499
+                                                <span>₹28,999</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/15.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/16.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">19%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">OPPO A31</a></h3>
+                                            <div class="price">₹12,990
+                                                <span>₹15,990</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/20.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/19.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">10%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star disable"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">OnePlus Nord CE 5G</a></h3>
+                                            <div class="price">₹22,499
+                                                <span>₹24,999</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/17.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/18.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">9%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">realme narzo 30</a></h3>
+                                            <div class="price">₹15,499
+                                                <span>₹16,999</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/1.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/2.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">15%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">IPhone 13 Mini</a></h3>
+                                            <div class="price">₹59,415
+                                                <span>₹69,900</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/3.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/4.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">10%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Black-Shark-3</a></h3>
+                                            <div class="price">₹33,021
+                                                <span>₹36,690</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/5.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/6.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">28%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star disable"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Vivo V19</a></h3>
+                                            <div class="price">₹22,200
+                                                <span>₹30,990</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/10.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/7.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">29%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Asus ROG Phone 5</a></h3>
+                                            <div class="price">₹39,999
+                                                <span>₹55,999</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/26.jpg' %}" alt="" >
+                                                <img class="pic-2" src="{% static 'landing/images/products/27.jpg' %}" alt="" >
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">8%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Infinix Note 11</a></h3>
+                                            <div class="price">₹13,799
+                                                <span>₹14,999</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="product-grid">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img class="pic-1" src="{% static 'landing/images/products/29.jpg' %}" alt="">
+                                                <img class="pic-2" src="{% static 'landing/images/products/28.jpg' %}" alt="">
+                                            </a>
+                                            <ul class="social">
+                                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                                <li><a href="/cart" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                            <span class="product-new-label">Sale</span>
+                                            <span class="product-discount-label">14%</span>
+                                        </div>
+                                        <ul class="rating">
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                            <li class="fa fa-star"></li>
+                                        </ul>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Redmi 9</a></h3>
+                                            <div class="price">₹9,499
+                                                <span>₹10,999</span>
+                                            </div>
+                                            <a class="add-to-cart" href="#">+ Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Line Chart -->
+            </div>
+        </div>
+    <script src="{% static 'dashboard/js/app.min.js' %}"></script>
+    <!-- Custom Js -->
+    <script src="{% static 'dashboard/js/admin.js' %}"></script>
+    <script src="{% static 'dashboard/js/pages/medias/carousel.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/ecommerce/products.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:24:13 GMT -->
+</html>

@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/examples/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:32:35 GMT -->
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Workssale Admin LogIn</title>
+	<!-- Favicon-->
+	<link rel="icon" href="{% static 'dashboard/images/favi.png' %}" type="image/x-icon">
+	<!-- Plugins Core Css -->
+	<link href="{% static 'dashboard/css/app.min.css' %}" rel="stylesheet">
+	<!-- Custom Css -->
+	<link href="{% static 'dashboard/css/style.css' %}" rel="stylesheet" />
+	<link href="{% static 'dashboard/css/pages/extra_pages.css' %}" rel="stylesheet" />
+	<style>
+		.alert {
+	padding: 10px;
+	background-color: #a5f0a5;
+	color: #0b520b;
+  }
+  
+  .closebtn {
+	margin-left: 15px;
+	color: #0b520b;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+	color: black;
+  }
+
+  .aler {
+	padding: 10px;
+	background-color: #f5a9a4;
+	color: #8a1911;
+  }
+  
+  .closebt {
+	margin-left: 15px;
+	color: #8a1911;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  .closebt:hover {
+	color: black;
+  }
+	</style>
+</head>
+
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="/admin_signin_form_submission" method="POST">
+					{% csrf_token %}
+					<span class="login100-form-title p-b-45">
+						<a class="log" href="/"><img src="{% static 'landing/images/logo.png' %}" width="140" height="70" alt="WorksSale" /></a>Login
+					</span>
+					{% for i in messages %}
+			{% if 'signup' in i.tags %}
+			  <div class="alert">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				<i class="fas fa-check"></i>  {{i}}
+			  </div>
+			{% endif %}
+		{% endfor %}
+		{% for j in messages %}
+			{% if 'failed_login' in j.tags %}
+			  <div class="aler">
+				<span class="closebt" onclick="this.parentElement.style.display='none';">&times;</span> 
+				<i class="fas fa-exclamation-triangle"></i>  {{j}}
+			  </div>
+			{% endif %}
+		{% endfor %}
+					
+					
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Email</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Password</span>
+					</div>
+
+					<div class="flex-sb-m w-full p-t-15 p-b-20">
+						<div class="form-check">
+							<label class="form-check-label">
+								<input class="form-check-input" type="checkbox" value=""> Remember me
+								<span class="form-check-sign">
+									<span class="check"></span>
+								</span>
+							</label>
+						</div>
+
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
+			
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Login
+						</button>
+					</div>
+				</form>
+
+				<div class="login100-more" style="background-image: url('../static/dashboard/images/bg-01.png');">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Plugins Js -->
+	<script src="{% static 'dashboard/js/app.min.js' %}"></script>
+	<!-- Extra page Js -->
+	<script src="{% static 'dashboard/js/pages/examples/pages.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/examples/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:32:42 GMT -->
+</html>

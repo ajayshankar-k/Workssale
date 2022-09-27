@@ -1,0 +1,466 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Workssale</title>
+<link rel="shortcut icon" href ="{% static 'landing/images/favi.png' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WorksSale Multipurpose Landing Page Template">
+<meta name="keywords" content="WorksSale HTML Template, WorksSale Landing Page, Landing Page Template">
+<link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'landing/css/contact.css' %}" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{% static 'landing/css/animate.css' %}">
+<!-- Resource style -->
+<link rel="stylesheet" href="{% static 'landing/css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'landing/css/owl.theme.css' %}">
+<link rel="stylesheet" href="{% static 'landing/css/ionicons.min.css' %}">
+<!-- Resource style -->
+<link href="{% static 'landing/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<style>
+  .alert {
+	padding: 20px;
+	background-color: #a5f0a5;
+	color: #0b520b;
+  }
+  
+  .closebtn {
+	margin-left: 15px;
+	color: #0b520b;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+	color: black;
+  }
+</style>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand page-scroll" href="#main"><img src="{% static 'landing/images/logo.png' %}" width="140" height="70" alt="WorksSale" /></a> </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a class="page-scroll" href="#main">Home</a></li>
+            <li><a class="page-scroll" href="/products">Products</a></li>
+            <li><a class="page-scroll" href="#features">Features</a></li>
+            <li><a class="page-scroll" href="#review-section">Reviews</a></li>
+            <li><a class="page-scroll" href="#pricing">Pricing</a></li>
+            <li><a class="page-scroll" href="/sign">Signin/Signup</a></li>
+            <li><a class="page-scroll" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid -->
+  
+  <div class="main app form" id="main"><!-- Main Section-->
+    <div class="hero-section">
+      <div class="container nopadding">
+        <div class="col-md-5"> <img class="img-responsive wow fadeInUp" data-wow-delay="0.1s" src="{% static 'landing/images/app-signup.png' %}" alt="App" /> </div>
+        <div class="col-md-7">
+          <div class="hero-content">
+            <h1 class="wow fadeInUp" data-wow-delay="0.1s">Welcome to Workssale <span style="font-size: 30px;">(SaaS based sales management software)</span></h1>
+            <h2 class="wow fadeInUp" data-wow-delay="0.2s">Mobile phones are no more merely a part of our lives.</h2>
+            <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
+              <form class="subscribe-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
+              <input class="mail" type="email" name="email" placeholder="Enter your email" autocomplete="off" id="subemail">
+              <input class="submit-button" type="submit" value="Subscribe" name="send" id="subsubmit">
+            </form>
+              <!-- subscribe message -->
+        <div id="mesaj"></div>
+        <!-- subscribe message --> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Client Section -->
+    <div class="client-section">
+      <div class="container text-center">
+        <div class="clients owl-carousel owl-theme">
+          <div class="single"> <img src="{% static 'landing/images/client1.png' %}" alt="Image" /> </div>
+          <div class="single"> <img src="{% static 'landing/images/client2.png' %}" alt="Image" /> </div>
+          <div class="single"> <img src="{% static 'landing/images/client3.png' %}" alt="Image" /> </div>
+          <div class="single"> <img src="{% static 'landing/images/client4.png' %}" alt="Image" /> </div>
+          <div class="single"> <img src="{% static 'landing/images/client5.png' %}" alt="Image" /> </div>
+          <div class="single"> <img src="{% static 'landing/images/client6.png' %}" alt="Image" /> </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-features text-center" id="features">
+      <div class="container">
+        <h1 class="wow fadeInDown" data-wow-delay="0.1s">iPhone 13 is Here</h1>
+        <p class="wow fadeInDown" data-wow-delay="0.2s"><a href="#"> Order Now</a></p>
+        <div class="col-md-4 features-left">
+          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
+            <div class="icon"> <i class="ion-ios-analytics-outline"></i> </div>
+            <div class="feature-single">
+              <h1>Custom OLED technology</h1>
+              <p> pushes the display’s incredible resolution and colour right to the edge </p>
+            </div>
+          </div>
+          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.3s">
+            <div class="icon"> <i class="ion-ios-briefcase-outline"></i> </div>
+            <div class="feature-single">
+              <h1>Privacy is built in.</h1>
+              <p>Apps need your permission to track your activity across other companies’ apps or websites. And that’s just for starters.</p>
+            </div>
+          </div>
+          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
+            <div class="icon"> <i class="ion-ios-chatboxes-outline"></i> </div>
+            <div class="feature-single">
+              <h1>IOS 15</h1>
+              <p> iOS 15 lets you keep the conversation going while sharing movies, music or whatever’s on your screen right in FaceTime. And interact with text in images to quickly send email, make calls, get directions and more. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 wow fadeInDown" data-wow-delay="0.5s"> <img class="img-responsive" src="{% static 'landing/images/iPhone-app.png' %}" alt="App" /> </div>
+        <div class="col-md-4 features-left">
+          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
+            <div class="icon"> <i class="ion-ios-cloud-download-outline"></i> </div>
+            <div class="feature-single">
+              <h1>5G capable</h1>
+              <p> 5G that are all technically capable of reaching incredible data speeds in iPhone. enjoy the speed up to 2 Gbps</p>
+            </div>
+          </div>
+          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
+            <div class="icon"> <i class="ion-ios-copy-outline"></i> </div>
+            <div class="feature-single">
+              <h1>Up to 1TB</h1>
+              <p>of storage, plenty for all those photos and videos</p>
+            </div>
+          </div>
+          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
+            <div class="icon"> <i class="ion-ios-game-controller-b-outline"></i> </div>
+            <div class="feature-single">
+              <h1>Up your game.</h1>
+              <p>The display’s ability to refresh up to 120Hz — combined with the amazing graphics performance of the new 5-core GPU on A15 Bionic — makes iPhone 13 Pro perfect for power gamers. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="split-features">
+      <div class="col-md-6 nopadding">
+        <div class="split-image"> <img class="img-responsive wow fadeIn" src="{% static 'landing/images/app_image.png' %}" alt="Image" /> </div>
+      </div>
+      <div class="col-md-6 nopadding">
+        <div class="split-content">
+          <h1 class="wow fadeInUp">Meet the 120Hz adaptive refresh display</h1>
+          <p class="wow fadeInUp"> The new Super Retina XDR display with ProMotion can refresh from 10 to 120 times per second, and all kinds of frame rates in between.</p>
+          <ul class="wow fadeInUp">
+            <li>iOS 15 is optimised for ProMotion, so the things you do every day feel phenomenally fluid</li>
+
+            <li> You’ve never felt anything like it.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+     <div class="split-features2">
+      
+      <div class="col-md-6 nopadding">
+        <div class="split-content second">
+          <h1 class="wow fadeInUp">
+            Macro photography comes to iPhone.</h1>
+          <p class="wow fadeInUp">With its redesigned lens and powerful autofocus system, the new Ultra Wide camera can focus at just 2 centimetres — making even the smallest details seem epic.</p>
+          <ul class="wow fadeInUp">
+            <li> Magnify a dewdrop. The beauty of tiny awaits.</li>
+          <li> You can also shoot macro videos — including slow motion and time-lapse.</li>
+          
+        </div>
+      </div>
+      <div class="col-md-6 nopadding">
+        <div class="split-image"> <img class="img-responsive wow fadeIn" src="{% static 'landing/images/app_image2.png' %}" alt="Image" /> </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="pitch text-center">
+      <div class="container">
+        <div class="pitch-intro">
+          <h1 class="wow fadeInDown" data-wow-delay="0.2s">In Built Privacy and Security</h1>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
+            <div class="pitch-icon"> <i class="ion-ios-checkmark-outline"></i> </div>
+            <div class="pitch-content">
+              <h1>Malware Protection</h1>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
+            <div class="pitch-icon"> <i class="ion-ios-mic-outline"></i> </div>
+            <div class="pitch-content">
+              <h1>Encrypted Calling Service</h1>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
+            <div class="pitch-icon"> <i class="ion-ios-folder-outline"></i> </div>
+            <div class="pitch-content">
+              <h1>24/7 File Protection</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-sub">
+      <div class="container">
+        <div class="sub-inner">
+          <h1 class="wow fadeInUp">For Your Easy Life! Check Out Our Best Offers , On Latest Smartphones</h1>
+          <a href="/products" class="btn btn-action wow fadeInUp">Buy now</a> </div>
+      </div>
+    </div>
+    <div id="review-section" class="review-section">
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="reviews owl-carousel owl-theme">
+            <div class="review-single"><img class="img-circle" src="{% static 'landing/images/customer1.png' %}" alt="Client Testimonoal" />
+              <div class="review-text wow fadeInUp" data-wow-delay="0.2s">
+                <h3>Johnathan Doe</h3>
+                <h3>-Marketing Manager</h3>
+                <p>WorksSale is a SaaS-based sales management software with millions of users worldwide.</p>
+              </div>
+            </div>
+            <div class="review-single"><img class="img-circle" src="{% static 'landing/images/customer2.png' %}" alt="Client Testimonoal" />
+              <div class="review-text">
+                <h3>Oidila Matik</h3>
+                <h3>-Customer service specialist</h3>
+                <p>WorksSale software allows users to buy mobiles from anywhere.</p>
+              </div>
+            </div>
+            <div class="review-single"><img class="img-circle" src="{% static 'landing/images/customer3.png' %}" alt="Client Testimonoal" />
+              <div class="review-text">
+                <h3>Alex Dattilo</h3>
+                <h3>-Account manager</h3>
+                <p>WorksSale is a best software for buy mobile from online.</p>
+              </div>
+            </div>
+            <div class="review-single"><img class="img-circle" src="{% static 'landing/images/customer4.png' %}" alt="Client Testimonoal" />
+              <div class="review-text">
+                <h3>Robert Hammer</h3>
+                <h3>-Area Sales Manager</h3>
+                <p>Your ordered mobile item will come to your home within 3 days.</p>
+              </div>
+            </div>
+            <div class="review-single"><img class="img-circle" src="{% static 'landing/images/customer5.png' %}" alt="Client Testimonoal" />
+              <div class="review-text">
+                <h3>Rita Valentine</h3>
+                <h3>-Direct Sales Manager</h3>
+                <p>WorksSale give you a quality mobiles with the cheapest price.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pricing" class="pricing-section text-center">
+      <div class="container">
+        <div class="col-md-12 col-sm-12 nopadding">
+          <div class="pricing-intro">
+            <h1 class="wow fadeInUp" data-wow-delay="0s">Become A Prime Member.</h1>
+          </div>
+          <div class="col-sm-4">
+            <div class="table-left wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"> <i class="ion-ios-paperplane-outline"></i> </div>
+              <div class="pricing-details">
+                <h2>Starter Plan</h2>
+                <span>Free Trial</span>
+                <ul>
+                  <li>3 Months of free trial</li>
+                  <li>Get Discounts for every purchase</li>
+                  <li>It don't have the membership</li>
+                </ul>
+                <button class="btn btn-primary btn-action btn-fill">Get Plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="table-right table-center wow fadeInUp" data-wow-delay="0.6s">
+              <div class="icon"> <i class="ion-ios-analytics-outline"></i> </div>
+              <div class="pricing-details">
+                <h2>Popular Plan</h2>
+                <span>₹599</span>
+              
+                <ul>
+                  <li>Get Premium Membership For 3 Months</li>
+                  <li>Get Discounts for every purchase</li>
+                  <li>Get Bonus Rewards And Discounts</li>
+                </ul>
+                <button class="btn btn-primary btn-action btn-fill">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="table-right wow fadeInUp" data-wow-delay="0.6s">
+              <div class="icon"> <i class="ion-ios-color-wand-outline"></i> </div>
+              <div class="pricing-details">
+                <h2>Premium Plan</h2>
+                <span>₹899</span>
+                <ul>
+                  <li>Get Premium Membership For 8 Months</li>
+                  <li>Get Discounts for every purchase</li>
+                  <li>Get Bonus Rewards And Discounts</li>
+                </ul>
+                <button class="btn btn-primary btn-action btn-fill">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Contact Page-->
+    <div class="body" id="contact">
+    <div class="background">
+      <div class="cont">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          {% for i in messages %}
+          <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <i class="fas fa-check"></i>  {{i}}
+          </div>
+          {% endfor %}
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>CONTACT</span>
+                <span>US</span>
+              </div>
+              <div class="app-contact">CONTACT INFO : +91 8778555584</div>
+            </div>
+            <div class="screen-body-item">
+              <form method="POST" action="/contact_form_submission">
+                {% csrf_token %}
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" name="name" required>
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL" name="email" required>
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO" name="contact_no" required>
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE" name="message" required>
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button class="app-form-button">CANCEL</button>
+                    <button class="app-form-button" type="submit">SEND</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--Contact Page-->
+
+    <!-- Subscribe Form -->
+    <div class="cta-sub no-color">
+      <div class="container">
+        <div class="cta-inner">
+          <h1 class="wow fadeInUp" data-wow-delay="0s">Sign Up and get exciting offers</h1>
+          <p class="wow fadeInUp" data-wow-delay="0.2s"> Enter your email address we promise, never disclose<br class="hidden-xs">
+             or sell your email address. </p>
+          <div class="form wow fadeInUp" data-wow-delay="0.3s">
+            <form class="subscribe-form center-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
+              <input class="mail" type="email" name="email" placeholder="Enter your email" autocomplete="off" id="subemail">
+              <input class="submit-button" type="submit" value="Subscribe" name="send" id="subsubmit">
+            </form>
+              <!-- subscribe message -->
+        <div id="mesaj"></div>
+        <!-- subscribe message --> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counting Section -->
+    <section>
+      <div class="cta-sub1 counter-section">
+        <div class="container">
+          <div class="row text-center">
+            <div class="counter-box">
+              <div class="icon-box"><i class="fa fa-street-view"></i></div>
+              <p class="counter">{{num_visits}}</p>
+              <p>VISITORS OF OUR WEBSITE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-7"> <a href="/admin_signin"><img src="{% static 'landing/images/logo.png' %}" width="140" height="70" alt="Image" /></a>
+          <p>Workssale offers multiple payment gateways to select preferred payment option. A customer can choose from various payment modes like credit or debit cards, payment wallets and cash-on-delivery. Workssale allows its customers to avail Easy EMI options on credit & debit cards or through available consumer finance options.  </p>
+          <div class="footer-text">
+            <p> Copyright <a href="/admin_signin" style="text-decoration: none;">&copy; </a> 2022. All Rights Reserved By Workssale </p>
+          </div>
+        </div>
+        <div class="col-md-5">
+            <h1>Contact Us</h1>
+            <p> Contact our 24/7 customer support if you have any <br class="hidden-xs">
+              questions. We'll help you out. </p>
+            <a href="mailto:workssale@gmail.com">workssale@gmail.com</a> </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll To Top --> 
+    
+    <a id="back-top" class="back-to-top page-scroll" href="#main"> <i class="ion-ios-arrow-thin-up"></i> </a> 
+    
+    <!-- Scroll To Top Ends--> 
+    
+  </div>
+  <!-- Main Section --> 
+</div>
+<!-- Wrapper--> 
+
+<!-- Jquery and Js Plugins --> 
+<script type="text/javascript" src="{% static 'landing/js/jquery-2.1.1.js' %}"></script> 
+<script type="text/javascript" src="{% static 'landing/js/bootstrap.min.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'landing/js/plugins.js' %}"></script> 
+<script type="text/javascript" src="{% static 'landing/js/menu.js' %}"></script> 
+<script type="text/javascript" src="{% static 'landing/js/custom.js' %}"></script>
+<script src="{% static 'landing/js/jquery.subscribe.js' %}"></script> 
+</body>
+</html>
